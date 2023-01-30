@@ -7,6 +7,9 @@ function getComputerChoice(){
 }
 
 function playround(playerselection, computerselection){
+    
+    playerSelection = prompt("Choose 0, 1, 2");
+    
     if(playerselection == 0 && computerselection ==0){
         console.log("Draw");
     }
@@ -49,8 +52,7 @@ function game(){
     let playerSelection;
 
     for(let i = 0; i < 10; i++){
-
-    playerSelection = prompt("Choose 0, 1, 2");
+        
     result = playround(playerSelection, computerSelection);
 
     if(result == "Win"){
